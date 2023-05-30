@@ -71,3 +71,24 @@
   margin-block: 0.5rem;
   color: #ffb03b;
 }
+
+.restart-quiz {
+  margin-block: 1rem;
+}
+
+.restart-quiz__icon {
+  filter: invert(65%) sepia(27%) saturate(1215%) hue-rotate(353deg)
+    brightness(90%) contrast(101%);
+  cursor: pointer;
+}
+
+.restart-quiz__icon:hover {
+  filter: invert(88%) sepia(11%) saturate(6612%) hue-rotate(328deg)
+    brightness(102%) contrast(101%) drop-shadow(0 0 0.25rem rgba(255,240,165, 0.5));
+}
+
+.restart-quiz__btn {
+  background: none;
+  outline: none;
+  border: none;
+}

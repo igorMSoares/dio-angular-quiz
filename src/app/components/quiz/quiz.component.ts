@@ -37,6 +37,7 @@ export class QuizComponent {
   playerChoice(value: string) {
     this.answers.push(value);
     this.nextStep();
+    console.log(this.answers)
   }
 
   async nextStep() {
@@ -63,5 +64,12 @@ export class QuizComponent {
     });
 
     return result;
+  }
+
+  restartQuiz() {
+    this.questionIndex = 0;
+    this.selectedQuestion = this.questions[this.questionIndex];
+    this.answers = [];
+    this.finished = false;
   }
 }

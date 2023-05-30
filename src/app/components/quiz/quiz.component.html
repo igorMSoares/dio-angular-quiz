@@ -23,4 +23,17 @@
   <div *ngIf="finished" class="quiz-results">
     <h2 class="quiz-results__title">{{ selectedAnswer }}</h2>
   </div>
+
+  <p *ngIf="finished" class="restart-quiz">
+    <button (click)="restartQuiz()" type="button" class="restart-quiz__btn">
+      <img
+        class="restart-quiz__icon"
+        src="../../../assets/imgs/refresh-icon.svg"
+        alt="Restart Quiz"
+        title="Restart Quiz"
+        width="48"
+        height="48"
+      />
+    </button>
+  </p>
 </div>
