@@ -18,6 +18,11 @@ input, button, textarea, select {
   font: inherit;
 }
 
+button {
+  border: none;
+  cursor: pointer;
+}
+
 ul, ol {
   list-style: none;
 }
