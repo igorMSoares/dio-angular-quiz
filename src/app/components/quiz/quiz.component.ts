@@ -4,7 +4,7 @@ import quizQuestions from '../../../assets/data/quiz-questions.json';
 @Component({
   selector: 'app-quiz',
   templateUrl: './quiz.component.html',
-  styleUrls: ['./quiz.component.css'],
+  styleUrls: ['./quiz.component.css', './quiz.responsive.component.css'],
 })
 export class QuizComponent {
   title: string = '';
@@ -37,7 +37,6 @@ export class QuizComponent {
   playerChoice(value: string) {
     this.answers.push(value);
     this.nextStep();
-    console.log(this.answers)
   }
 
   async nextStep() {

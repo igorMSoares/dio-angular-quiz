@@ -1,0 +1,30 @@
+@media (max-width: 720px) {
+  .quiz-questions,
+  .quiz-results {
+    padding-inline: 3rem;
+  }
+
+  .quiz-results {
+    padding-block: 3.5rem;
+  }
+
+  .quiz-options {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .quiz-title {
+    font-size: 1.75rem;
+  }
+
+  .quiz-questions,
+  .quiz-results {
+    padding-inline: 1rem;
+    padding-block: 2rem;
+  }
+
+  .quiz-options {
+    grid-template-columns: unset;
+  }
+}
