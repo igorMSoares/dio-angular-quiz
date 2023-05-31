@@ -1,6 +1,12 @@
 import { Component } from '@angular/core';
 import quizQuestions from '../../../assets/data/quiz-questions.json';
 
+type Question = {
+  id: number;
+  question: string;
+  options: Array<{ id: number; name: string; alias: string }>;
+};
+
 @Component({
   selector: 'app-quiz',
   templateUrl: './quiz.component.html',
@@ -9,8 +15,12 @@ import quizQuestions from '../../../assets/data/quiz-questions.json';
 export class QuizComponent {
   title: string = '';
 
-  questions: any;
-  selectedQuestion: any;
+  questions: Question[] = [];
+  selectedQuestion: Question = {
+    id: -1,
+    question: '',
+    options: [],
+  };
 
   answers: string[] = [];
   selectedAnswer: string = '';
